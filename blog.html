@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blog ECU DRIVE – Lucrări, sfaturi și noutăți</title>
+<link rel="canonical" href="https://ecudrive.ro/blog.html">
+<meta property="og:image" content="https://ecudrive.ro/img/badge.jpg">
+<meta name="description" content="Lucrări reale, sfaturi și noutăți de la ECU DRIVE: diagnoză, Stage 1/2/3, DPF, EGR, AdBlue, codări.">
+<meta name="theme-color" content="#05070b">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2305070b'/%3E%3Cpath d='M36 6 14 36h14l-4 22 26-34H36z' fill='%231e90ff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,700;0,800;1,800;1,900&family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="progress" id="progress"></div>
+
+<header class="nav" id="nav">
+  <div class="wrap nav__in">
+    <a href="index.html" class="logo" aria-label="ECU DRIVE – Performance &amp; Diagnostics, acasă">
+      <svg class="logo__swoosh" viewBox="0 0 200 30" aria-hidden="true"><defs><linearGradient id="gSw" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".35" stop-color="#e8edf3"/><stop offset=".75" stop-color="#9aa6b5"/><stop offset="1" stop-color="#1e90ff"/></linearGradient></defs><path d="M6 27C40 14 70 6 104 5c30-1 52 4 70 12-20-5-42-8-68-6C74 13 42 19 6 27z" fill="url(#gSw)"/><g stroke="#1e90ff" stroke-width="3" stroke-linecap="round"><path d="M170 10l4-5M178 14l5-5M185 19l6-4M190 25l7-3"/></g></svg>
+      <span class="logo__txt"><span class="chrome">ECU</span> <b>DRIVE</b></span>
+      <span class="logo__tag">Performance &amp; Diagnostics</span>
+    </a>
+    <nav id="menu" class="menu">
+      <a href="index.html#servicii">Servicii</a>
+      <a href="index.html#soft">Soft Stage</a>
+      <a href="index.html#probleme">DPF · EGR · AdBlue</a>
+      <a href="blog.html" class="active">Blog</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="index.html#contact" class="btn btn--sm">Programare <i>→</i></a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Meniu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+  </div>
+</header>
+<main>
+<section class="page-hero">
+  <div class="grid-bg" aria-hidden="true"></div>
+  <div class="hero__glow" aria-hidden="true"></div>
+  <div class="wrap" style="position:relative">
+    <p class="crumbs reveal"><a href="index.html">Acasă</a> / Blog</p>
+    <h1 class="reveal"><span class="chrome">Blog &amp;</span> <span class="grad">lucrări</span></h1>
+    <p class="sub reveal">Lucrări reale din atelier, sfaturi și tot ce trebuie să știi despre mașina ta.</p>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="toolbar">
+      <div class="chips" id="chips" role="group" aria-label="Filtrează după categorie"></div>
+      <label class="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><input id="q" type="search" placeholder="Caută în articole…" aria-label="Caută în articole"></label>
+    </div>
+    <div class="posts" id="blogList" aria-live="polite"></div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot__word" aria-hidden="true"><span class="chrome">ECU</span><b>DRIVE</b></div>
+    <p class="foot__tag" aria-hidden="true">Performance &amp; Diagnostics</p>
+    <div class="foot__in">
+      <span>© <span id="yr"></span> ECU DRIVE. Toate drepturile rezervate.</span>
+      <nav><a href="index.html#servicii">Servicii</a><a href="index.html#soft">Soft</a><a href="blog.html">Blog</a><a href="index.html#contact">Contact</a></nav>
+    </div>
+  </div>
+</footer>
+
+<a class="fab" href="https://wa.me/40773492879" target="_blank" rel="noopener" aria-label="Scrie-ne pe WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2s-1 .3-3.4-.7a11.6 11.6 0 0 1-4.6-4.1c-.4-.5-1-1.6-1-2.9s.7-2 1-2.3a1 1 0 0 1 .7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.5c-.1.1-.3.3-.1.6a8 8 0 0 0 1.5 1.8 7 7 0 0 0 2.1 1.3c.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.2.1.7-.2 1z"/></svg>
+</a>
+<script src="script.js"></script>
+<script src="blog.js"></script>
+</body>
+</html>

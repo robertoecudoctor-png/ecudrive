@@ -1,0 +1,42 @@
+# Panoul de administrare pentru blog (Decap CMS) – se deschide la adresa-site/admin
+# Articolele se salvează în blog/posts.json, pozele în img/blog.
+
+backend:
+  name: github
+  repo: robertoracotea3-rgb/ecudrive
+  branch: main
+
+# Pentru teste pe calculator: rulează `npx decap-server` în folderul site-ului
+local_backend: true
+
+media_folder: "img/blog"
+public_folder: "img/blog"
+
+collections:
+  - name: "blog"
+    label: "Blog"
+    editor:
+      preview: false
+    files:
+      - name: "posts"
+        label: "Articole"
+        file: "blog/posts.json"
+        format: "json"
+        fields:
+          - name: "posts"
+            label: "Articole"
+            label_singular: "Articol"
+            widget: "list"
+            add_to_top: true
+            summary: "{{fields.title}}  ·  {{fields.date | date('DD.MM.YYYY')}}"
+            fields:
+              - { name: "title", label: "Titlu", widget: "string" }
+              - { name: "slug", label: "Link (fără spații, ex: golf-7-stage-1)", widget: "string", pattern: ["^[a-z0-9-]+$", "Doar litere mici, cifre și cratimă"] }
+              - { name: "date", label: "Data", widget: "datetime" }
+              - name: "category"
+                label: "Categorie"
+                widget: "select"
+                options: ["Lucrări", "Soft / Stage", "DPF · EGR · AdBlue", "Diagnoză", "Codări", "Sfaturi", "Noutăți"]
+              - { name: "cover", label: "Poză copertă", widget: "image", required: false }
+              - { name: "excerpt", label: "Rezumat scurt (apare pe card)", widget: "text" }
+              - { name: "body", label: "Conținut", widget: "markdown" }

@@ -1,0 +1,31 @@
+{
+  "posts": [
+    {
+      "title": "Volvo XC60: „Soot filter full” – diagnoză și regenerare DPF",
+      "slug": "volvo-xc60-regenerare-dpf",
+      "date": "2026-10-04T12:00:00.000Z",
+      "category": "Lucrări",
+      "cover": "img/blog/volvo-xc60-dpf.jpg",
+      "excerpt": "Un Volvo XC60 a venit cu mesajul „Soot filter full – See manual” pe bord. Diagnoză completă, verificarea parametrilor, regenerare DPF și ștergere erori: mașina a plecat pregătită de drum.",
+      "body": "Un **Volvo XC60** a intrat în atelier cu mesajul **„Soot filter full – See manual”** afișat pe bord, împreună cu martorul de avertizare. Filtrul de particule (DPF) era încărcat cu funingine, iar mașina nu reușise să-l curețe singură prin regenerările normale de drum.\n\n## Ce am făcut\n\n- **Diagnoză completă** – am citit erorile din toate modulele, nu doar din motor.\n- **Verificare parametri** – presiunea diferențială pe filtru, masa de funingine calculată de calculator și temperaturile gazelor înainte și după catalizator.\n- **Regenerare DPF** – am pornit regenerarea de service din tester, urmărind temperaturile pe tot parcursul procedurii, până la statusul **„Regeneration Successful”**.\n- **Ștergere erori** și verificare finală a valorilor după regenerare.\n- **Auto pregătit de drum** – martorul s-a stins, iar parametrii au revenit în limite normale.\n\n## De ce se umple DPF-ul?\n\nCele mai frecvente cauze sunt drumurile scurte prin oraș, unde motorul nu ajunge suficient de cald ca filtrul să se regenereze singur. Pot contribui și un senzor de presiune diferențială defect, injectoare care nu pulverizează corect sau o supapă EGR încărcată.\n\n> Important: o regenerare rezolvă efectul. De aceea verificăm și cauza, ca problema să nu revină după câteva sute de kilometri.\n\n## Ai un mesaj asemănător pe bord?\n\nNu ignora avertizarea: un DPF lăsat să se încarce prea mult poate duce la mod avarie sau chiar la înlocuirea filtrului. Scrie-ne și facem o diagnoză înainte ca problema să se agraveze."
+    },
+    {
+      "title": "Stage 1: ce înseamnă și ce câștigi de fapt",
+      "slug": "ce-este-stage-1",
+      "date": "2026-09-20T12:00:00.000Z",
+      "category": "Soft / Stage",
+      "cover": "img/stage1.jpg",
+      "excerpt": "Putere mai mare, cuplu îmbunătățit, răspuns mai rapid. Ce face concret o reprogramare Stage 1 și când are sens.",
+      "body": "**Stage 1** este o reprogramare a calculatorului motorului (ECU) pe o mașină complet originală, fără modificări de piese.\n\n## Ce se modifică\n\nProducătorii lasă de obicei o rezervă în setările motorului. Printr-un soft personalizat ajustăm parametri precum presiunea turbo, cantitatea de combustibil și momentul injecției, în limite sigure pentru motor.\n\n## Ce câștigi\n\n- putere mai mare\n- cuplu îmbunătățit, mai ales la turații mici și medii\n- răspuns mai rapid la accelerație\n- consum optimizat la un condus relaxat\n\n## Când are sens\n\nStage 1 se face pe o mașină sănătoasă. De aceea începem mereu cu o **diagnoză**: dacă există erori sau piese uzate, le rezolvăm înainte. Fișierul original este salvat, așa că se poate reveni oricând la softul din fabrică."
+    },
+    {
+      "title": "Mesaj AdBlue „pornire imposibilă în X km”: ce înseamnă",
+      "slug": "mesaj-adblue-pornire-imposibila",
+      "date": "2026-09-05T12:00:00.000Z",
+      "category": "DPF · EGR · AdBlue",
+      "cover": "",
+      "excerpt": "Mesajul care numără invers kilometrii până la blocarea pornirii. Care sunt cauzele obișnuite și ce verificăm.",
+      "body": "Pe mașinile diesel cu sistem **AdBlue (SCR)**, calculatorul poate afișa un mesaj de tipul „pornire imposibilă în X km”. Este o protecție: dacă sistemul de reducere a emisiilor nu funcționează corect, mașina avertizează și, la final, poate bloca repornirea motorului.\n\n## Cauze frecvente\n\n- nivel scăzut sau fluid AdBlue de calitate slabă\n- **senzor NOx** defect\n- pompă sau încălzire AdBlue defectă\n- injector AdBlue înfundat sau cristalizat\n- probleme de cablaj sau comunicare între module\n\n## Ce verificăm\n\nCitim erorile, urmărim valorile live ale senzorilor NOx, testăm pompa, încălzirea și dozarea. Abia apoi stabilim ce trebuie reparat sau înlocuit.\n\nCu cât intervii mai devreme, cu atât rămân mai mulți kilometri și mai puțin stres."
+    }
+  ]
+}

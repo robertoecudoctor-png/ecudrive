@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ECU DRIVE Brașov – Diagnoză auto, Stage 1/2/3, Codări, DPF/EGR/AdBlue</title>
+<meta property="og:title" content="ECU DRIVE Brașov – Performance & Diagnostics">
+<meta property="og:image" content="https://ecudrive.ro/img/badge.jpg">
+<meta property="og:url" content="https://ecudrive.ro/">
+<link rel="canonical" href="https://ecudrive.ro/">
+<meta name="description" content="ECU DRIVE Brașov: diagnoză electrică auto, reprogramare ECU Stage 1, 2, 3, codări și rezolvarea problemelor DPF, EGR, AdBlue. Tel. 0773 492 879.">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"AutoRepair","name":"ECU DRIVE","description":"Performance & Diagnostics – diagnoză auto, reprogramare ECU Stage 1/2/3, codări, DPF/EGR/AdBlue","telephone":"+40773492879","email":"roberto.ecudoctor@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Brașov","addressCountry":"RO"},"areaServed":"Brașov"}</script>
+<meta name="theme-color" content="#05070b">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2305070b'/%3E%3Cpath d='M36 6 14 36h14l-4 22 26-34H36z' fill='%231e90ff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,700;0,800;1,800;1,900&family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="progress" id="progress"></div>
+
+<header class="nav" id="nav">
+  <div class="wrap nav__in">
+    <a href="#top" class="logo" aria-label="ECU DRIVE – Performance &amp; Diagnostics, acasă">
+      <svg class="logo__swoosh" viewBox="0 0 200 30" aria-hidden="true"><defs><linearGradient id="gSw" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".35" stop-color="#e8edf3"/><stop offset=".75" stop-color="#9aa6b5"/><stop offset="1" stop-color="#1e90ff"/></linearGradient></defs><path d="M6 27C40 14 70 6 104 5c30-1 52 4 70 12-20-5-42-8-68-6C74 13 42 19 6 27z" fill="url(#gSw)"/><g stroke="#1e90ff" stroke-width="3" stroke-linecap="round"><path d="M170 10l4-5M178 14l5-5M185 19l6-4M190 25l7-3"/></g></svg>
+      <span class="logo__txt"><span class="chrome">ECU</span> <b>DRIVE</b></span>
+      <span class="logo__tag">Performance &amp; Diagnostics</span>
+    </a>
+    <nav id="menu" class="menu">
+      <a href="#servicii">Servicii</a>
+      <a href="#soft">Soft Stage</a>
+      <a href="#probleme">DPF · EGR · AdBlue</a>
+      <a href="blog.html">Blog</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact" class="btn btn--sm">Programare <i>→</i></a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Meniu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero__photo" aria-hidden="true"></div>
+  <canvas id="bg" aria-hidden="true"></canvas>
+  <div class="hero__glow" aria-hidden="true"></div>
+  <div class="wrap hero__in">
+    <div class="hero__copy">
+      <p class="chip reveal"><span class="dot"></span> Performance &amp; Diagnostics</p>
+      <h1 class="reveal"><span class="chrome">Deblochează</span><br><span class="grad">adevărata putere</span><br><span class="chrome">a mașinii tale.</span></h1>
+      <p class="lead reveal">Diagnoză electrică completă, soft <b>Stage 1 / 2 / 3</b> și rezolvarea problemelor <b>DPF, EGR, AdBlue</b>. Echipament profesional, rezultate măsurate, zero ghicit.</p>
+      <div class="hero__cta reveal">
+        <a href="#contact" class="btn btn--lg">Cere ofertă gratuită <i>→</i></a>
+        <a href="#soft" class="btn btn--ghost btn--lg">Vezi câștigurile</a>
+      </div>
+      <ul class="trust reveal">
+        <li><b>Backup</b> fișier original</li>
+        <li><b>Soft</b> personalizat</li>
+        <li><b>Răspuns</b> în 24h</li>
+      </ul>
+    </div>
+
+    <div class="tacho reveal" id="tacho">
+      <div class="tacho__head">
+        <span class="mono">LIVE · ECU MAP</span>
+        <span class="mono tacho__car">EX: 2.0 TDI</span>
+      </div>
+      <svg viewBox="0 0 300 300" class="tacho__svg" aria-hidden="true">
+        <defs>
+          <linearGradient id="gArc" x1="0" y1="1" x2="1" y2="0">
+            <stop offset="0" stop-color="#78d2ff"/>
+            <stop offset=".55" stop-color="#1e90ff"/>
+            <stop offset="1" stop-color="#0052ff"/>
+          </linearGradient>
+          <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+        </defs>
+        <g id="ticks"></g>
+        <circle class="arc-track" cx="150" cy="150" r="118"/>
+        <circle class="arc-val" id="arcVal" cx="150" cy="150" r="118" stroke="url(#gArc)" filter="url(#glow)"/>
+        <g id="needle" class="needle">
+          <line x1="150" y1="150" x2="150" y2="48"/>
+          <circle cx="150" cy="150" r="10"/>
+        </g>
+      </svg>
+      <div class="tacho__read">
+        <div><strong id="rHp">150</strong><span>CP</span></div>
+        <div><strong id="rNm">340</strong><span>Nm</span></div>
+        <div class="gain"><strong id="rGain">+0%</strong><span>câștig</span></div>
+      </div>
+      <div class="seg" role="tablist" aria-label="Nivel soft">
+        <button class="on" data-st="0" role="tab" aria-selected="true">Stock</button>
+        <button data-st="1" role="tab" aria-selected="false">Stage 1</button>
+        <button data-st="2" role="tab" aria-selected="false">Stage 2</button>
+        <button data-st="3" role="tab" aria-selected="false">Stage 3</button>
+      </div>
+      <p class="tiny">Valori ilustrative. Rezultatul real depinde de motor și starea mașinii.</p>
+    </div>
+  </div>
+  <a href="#servicii" class="scroll-cue" aria-label="Derulează"><span></span></a>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span>AUDI</span><span>BMW</span><span>VOLKSWAGEN</span><span>MERCEDES-BENZ</span><span>ŠKODA</span><span>SEAT</span><span>FORD</span><span>OPEL</span><span>RENAULT</span><span>PEUGEOT</span><span>VOLVO</span><span>TOYOTA</span><span>HYUNDAI</span><span>KIA</span><span>FIAT</span><span>DACIA</span>
+    <span>AUDI</span><span>BMW</span><span>VOLKSWAGEN</span><span>MERCEDES-BENZ</span><span>ŠKODA</span><span>SEAT</span><span>FORD</span><span>OPEL</span><span>RENAULT</span><span>PEUGEOT</span><span>VOLVO</span><span>TOYOTA</span><span>HYUNDAI</span><span>KIA</span><span>FIAT</span><span>DACIA</span>
+  </div>
+</div>
+
+<!-- SERVICII -->
+<section class="sec" id="servicii">
+  <div class="wrap">
+    <header class="sec__head reveal">
+      <p class="kicker">01 / Servicii</p>
+      <h2>Tot ce ține de electronica<br>și performanța mașinii.</h2>
+    </header>
+    <div class="pillars reveal">
+      <a href="#soft" class="pillar"><svg viewBox="0 0 24 24"><path d="M4 20V14M9 20V10M14 20V12M19 20V6"/><path d="M3 11 9 6l4 3 7-6M16 3h4v4"/></svg><b>Stage 1/2/3</b><span>ECU remap</span></a>
+      <a href="#servicii-detalii" class="pillar"><svg viewBox="0 0 24 24"><path d="M5 9h2l2-3h6v3h3v2h2v4h-2v2h-3l-2 2H9l-2-3H5z"/><path d="M9 13h2l1-2 1 3 1-1h1"/></svg><b>Diagnoză</b><span>Profesională</span></a>
+      <a href="#servicii-detalii" class="pillar"><svg viewBox="0 0 24 24"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg><b>Codări</b><span>Personalizări</span></a>
+      <a href="#servicii-detalii" class="pillar"><svg viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg><b>Electrică auto</b><span>Reparații &amp; soluții</span></a>
+      <a href="#probleme" class="pillar"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="10" rx="2"/><path d="M7 7v10M11 7v10M15 7v10"/></svg><b>DPF · EGR · AdBlue</b><span>Rezolvări probleme</span></a>
+    </div>
+    <div class="bento" id="servicii-detalii">
+      <article class="tile tile--xl spot reveal">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M2 12h4l2.5-7 5 14 2.5-7h6"/></svg></div>
+        <h3>Diagnoză completă</h3>
+        <p>Toate sistemele: citire și interpretare erori, date live de la senzori, teste de actuatori, module și rețea CAN. Echipamente profesionale, pentru toate mărcile principale.</p>
+        <div class="scope" aria-hidden="true"><svg viewBox="0 0 400 80" preserveAspectRatio="none"><path class="scope__line" d="M0 40 L60 40 L75 12 L90 68 L105 40 L170 40 L185 20 L200 60 L215 40 L280 40 L295 8 L310 72 L325 40 L400 40"/></svg></div>
+      </article>
+      <article class="tile spot reveal">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M4 17a8 8 0 1 1 16 0"/><path d="m12 17 4.5-6"/></svg></div>
+        <h3>Stage 1/2/3 ECU remap</h3>
+        <p>Putere mai mare, cuplu îmbunătățit, răspuns mai rapid, consum optimizat.</p>
+      </article>
+      <article class="tile spot reveal">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg></div>
+        <h3>Codări și activări</h3>
+        <p>Personalizări și activarea funcțiilor ascunse ale mașinii.</p>
+      </article>
+      <article class="tile spot reveal">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></div>
+        <h3>Reparații electrice</h3>
+        <p>Cablaje, scurtcircuite, consumatori și module electronice.</p>
+      </article>
+      <article class="tile spot reveal">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M5 17h14M6 17l1.5-5h9L18 17M8 12l1-3h6l1 3"/><circle cx="8" cy="18" r="1.5"/><circle cx="16" cy="18" r="1.5"/></svg></div>
+        <h3>Resetări și adaptări</h3>
+        <p>După intervenții: service, componente noi, calibrări.</p>
+      </article>
+      <article class="tile tile--wide spot reveal">
+        <div class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="10" rx="2"/><path d="M7 7v10M11 7v10M15 7v10"/></svg></div>
+        <h3>DPF · EGR · AdBlue și altele</h3>
+        <div class="pills">
+          <span>DPF</span><span>EGR</span><span>AdBlue / SCR</span><span>Senzori NOx</span><span>Limp mode</span><span>Probleme pornire</span><span>Turbo</span><span>Injectoare</span><span>MAF / MAP</span><span>Lambda</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SOFT / DYNO -->
+<section class="sec sec--dark" id="soft">
+  <div class="grid-bg" aria-hidden="true"></div>
+  <div class="wrap">
+    <header class="sec__head reveal">
+      <p class="kicker">02 / Soft Stage</p>
+      <h2>Vezi diferența pe <span class="grad">dyno.</span></h2>
+      <p class="sub">Curbele de putere și cuplu înainte și după reprogramare. Alege nivelul.</p>
+    </header>
+
+    <div class="dyno reveal">
+      <div class="dyno__top">
+        <div class="seg seg--big" id="dynoSeg" role="tablist" aria-label="Nivel soft dyno">
+          <button data-st="1" class="on" role="tab" aria-selected="true">Stage 1</button>
+          <button data-st="2" role="tab" aria-selected="false">Stage 2</button>
+          <button data-st="3" role="tab" aria-selected="false">Stage 3</button>
+        </div>
+        <div class="legend">
+          <span><i class="lg lg--stock"></i>Original</span>
+          <span><i class="lg lg--tuned"></i>Reprogramat</span>
+          <span><i class="lg lg--dash"></i>Cuplu</span>
+        </div>
+      </div>
+      <div class="dyno__body">
+        <svg viewBox="0 0 640 320" class="dyno__svg" id="dynoSvg" role="img" aria-label="Grafic putere și cuplu">
+          <defs>
+            <linearGradient id="gFill" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#1e90ff" stop-opacity=".35"/>
+              <stop offset="1" stop-color="#1e90ff" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <g id="dGrid"></g>
+          <path id="dFill" fill="url(#gFill)"/>
+          <path id="dStockP" class="c-stock"/>
+          <path id="dStockT" class="c-stock dash"/>
+          <path id="dTunedT" class="c-tuned dash"/>
+          <path id="dTunedP" class="c-tuned"/>
+        </svg>
+        <div class="dyno__stats">
+          <div class="ds"><span class="mono">PUTERE</span><strong><em id="dHp0">151</em> → <b id="dHp1">0</b></strong><small>CP</small></div>
+          <div class="ds"><span class="mono">CUPLU</span><strong><em id="dNm0">340</em> → <b id="dNm1">0</b></strong><small>Nm</small></div>
+          <div class="ds ds--acc"><span class="mono">CÂȘTIG</span><strong id="dGain">+0%</strong><small>putere</small></div>
+        </div>
+      </div>
+      <p class="tiny">Exemplu ilustrativ pentru un motor diesel 2.0. Valorile reale se stabilesc după diagnoză.</p>
+    </div>
+
+    <div class="plans">
+      <article class="plan spot reveal">
+        <div class="plan__n">01</div>
+        <h3>Stage 1</h3>
+        <p class="meta">Mașină 100% originală</p>
+        <ul>
+          <li>Doar reprogramare ECU</li>
+          <li>Creștere vizibilă de putere și cuplu</li>
+          <li>Răspuns mai bun la accelerație</li>
+          <li>Consum optimizat la condus relaxat</li>
+        </ul>
+        <a href="#contact" class="btn btn--ghost" data-service="Stage 1">Vreau Stage 1</a>
+      </article>
+      <article class="plan plan--hot spot reveal">
+        <span class="badge">Cel mai cerut</span>
+        <div class="plan__n">02</div>
+        <h3>Stage 2</h3>
+        <p class="meta">Soft + piese de performanță</p>
+        <ul>
+          <li>Soft adaptat la downpipe, admisie, intercooler</li>
+          <li>Câștiguri peste Stage 1</li>
+          <li>Verificare turbo și sistem de răcire</li>
+          <li>Pentru mecanică în stare perfectă</li>
+        </ul>
+        <a href="#contact" class="btn" data-service="Stage 2">Vreau Stage 2</a>
+      </article>
+      <article class="plan spot reveal">
+        <div class="plan__n">03</div>
+        <h3>Stage 3</h3>
+        <p class="meta">Turbo mărit, injectoare, hardware dedicat</p>
+        <ul>
+          <li>Hartă complet personalizată</li>
+          <li>Teste și ajustări fine</li>
+          <li>Pentru proiecte dedicate</li>
+          <li>Se discută individual</li>
+        </ul>
+        <a href="#contact" class="btn btn--ghost" data-service="Stage 3">Vreau Stage 3</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SCHEMA DPF/EGR/ADBLUE -->
+<section class="sec" id="probleme">
+  <div class="wrap">
+    <header class="sec__head reveal">
+      <p class="kicker">03 / Sisteme poluare</p>
+      <h2>DPF, EGR, AdBlue.<br>Găsim cauza reală.</h2>
+      <p class="sub">Apasă pe o componentă ca să vezi simptomele și ce verificăm.</p>
+    </header>
+
+    <div class="sys reveal">
+      <div class="sys__map">
+        <svg viewBox="0 0 800 330" id="schema" role="group" aria-label="Schema sistemului de evacuare">
+          <defs>
+            <pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="8" stroke="#1e90ff" stroke-opacity=".35" stroke-width="3"/></pattern>
+          </defs>
+          <!-- conducte -->
+          <path class="pipe" d="M190 180 H254 M326 180 H380 M510 180 H580 M700 180 H780"/>
+          <path class="pipe" d="M222 180 V62 H210 M140 62 H112 V120"/>
+          <path class="pipe pipe--thin" d="M535 255 V196"/>
+          <!-- flux -->
+          <path class="flow" d="M190 180 H254 M326 180 H380 M510 180 H580 M700 180 H780"/>
+          <path class="flow flow--egr" d="M222 180 V62 H112 V120"/>
+          <path class="flow flow--blue" d="M535 255 V196"/>
+
+          <g class="node" data-k="motor" tabindex="0" role="button" aria-label="Motor">
+            <rect x="40" y="120" width="150" height="120" rx="14"/>
+            <g class="cyl"><rect x="58" y="140" width="24" height="44" rx="4"/><rect x="92" y="140" width="24" height="44" rx="4"/><rect x="126" y="140" width="24" height="44" rx="4"/><rect x="160" y="140" width="14" height="44" rx="4" opacity=".0"/></g>
+            <text x="115" y="218">MOTOR</text>
+          </g>
+          <g class="node" data-k="egr" tabindex="0" role="button" aria-label="Supapa EGR">
+            <rect x="140" y="40" width="70" height="44" rx="10"/>
+            <text x="175" y="67">EGR</text>
+          </g>
+          <g class="node" data-k="turbo" tabindex="0" role="button" aria-label="Turbo">
+            <circle cx="290" cy="180" r="38"/>
+            <path class="fan" d="M290 180 l0 -24 M290 180 l21 12 M290 180 l-21 12"/>
+            <text x="290" y="240">TURBO</text>
+          </g>
+          <g class="node" data-k="dpf" tabindex="0" role="button" aria-label="Filtru DPF">
+            <rect x="380" y="140" width="130" height="80" rx="16"/>
+            <rect x="392" y="152" width="106" height="56" rx="8" fill="url(#hatch)" class="nofill"/>
+            <text x="445" y="242">DPF</text>
+          </g>
+          <g class="node" data-k="adblue" tabindex="0" role="button" aria-label="Sistem AdBlue">
+            <rect x="495" y="255" width="80" height="54" rx="10" class="blue"/>
+            <text x="535" y="288">AdBlue</text>
+            <circle cx="535" cy="180" r="9" class="blue"/>
+          </g>
+          <g class="node" data-k="scr" tabindex="0" role="button" aria-label="Catalizator SCR">
+            <rect x="580" y="140" width="120" height="80" rx="16"/>
+            <path class="nofill honey" d="M600 160h80M600 180h80M600 200h80"/>
+            <text x="640" y="242">SCR</text>
+          </g>
+          <g class="node" data-k="nox" tabindex="0" role="button" aria-label="Senzori NOx">
+            <circle cx="360" cy="150" r="9"/><line x1="360" y1="159" x2="360" y2="172" class="stem"/>
+            <circle cx="740" cy="150" r="9"/><line x1="740" y1="159" x2="740" y2="172" class="stem"/>
+            <text x="740" y="130">NOx</text>
+          </g>
+        </svg>
+      </div>
+      <aside class="sys__panel" id="panel" aria-live="polite">
+        <p class="mono kicker" id="pTag">DPF</p>
+        <h3 id="pTitle">Filtru de particule</h3>
+        <p id="pDesc"></p>
+        <div class="pcols">
+          <div><h4>Simptome</h4><ul id="pSym"></ul></div>
+          <div><h4>Ce verificăm</h4><ul id="pFix"></ul></div>
+        </div>
+        <a href="#contact" class="btn" data-service="Problemă DPF/EGR/AdBlue">Descrie problema <i>→</i></a>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="band">
+  <div class="wrap band__in">
+    <div class="stat reveal"><strong data-count="100" data-suf="%">0</strong><span>backup fișier original</span></div>
+    <div class="stat reveal"><strong data-count="3">0</strong><span>nivele de soft</span></div>
+    <div class="stat reveal"><strong data-count="24" data-suf="h">0</strong><span>răspuns la cerere</span></div>
+    <div class="stat reveal"><strong>Toate</strong><span>mărcile principale</span></div>
+  </div>
+</section>
+
+<!-- GALERIE -->
+<section class="sec" id="atelier">
+  <div class="wrap">
+    <header class="sec__head reveal">
+      <p class="kicker">Din atelier</p>
+      <h2>ECU DRIVE, <span class="grad">la lucru.</span></h2>
+    </header>
+    <div class="gallery">
+      <figure class="shot shot--wide reveal">
+        <img src="img/car.jpg" alt="Mașină în atelierul ECU DRIVE, cu laptop de diagnoză și grafic dyno" loading="lazy">
+        <figcaption><span class="mono">ATELIER</span>Diagnoză și reprogramare cu echipamente profesionale</figcaption>
+      </figure>
+      <figure class="shot reveal">
+        <img src="img/stage1.jpg" alt="Stage 1 ECU remap: putere mai mare, cuplu îmbunătățit, răspuns mai rapid, consum optimizat" loading="lazy">
+      </figure>
+      <figure class="shot reveal">
+        <img src="img/diagnoza.jpg" alt="Diagnoză, codări și electrică auto pentru toate mărcile principale" loading="lazy">
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- PROCES -->
+<section class="sec" id="proces">
+  <div class="wrap">
+    <header class="sec__head reveal">
+      <p class="kicker">04 / Proces</p>
+      <h2>De la programare la predare.</h2>
+    </header>
+    <ol class="timeline" id="timeline">
+      <li class="reveal"><span class="tl__n">1</span><h3>Programare</h3><p>Ne spui marca, modelul, motorul și ce îți dorești.</p></li>
+      <li class="reveal"><span class="tl__n">2</span><h3>Diagnoză</h3><p>Citim erorile și analizăm datele live ale motorului.</p></li>
+      <li class="reveal"><span class="tl__n">3</span><h3>Ofertă clară</h3><p>Ce e de făcut, cât costă, cât durează. Pe înțeles.</p></li>
+      <li class="reveal"><span class="tl__n">4</span><h3>Intervenție</h3><p>Salvăm softul original, lucrăm și testăm.</p></li>
+      <li class="reveal"><span class="tl__n">5</span><h3>Predare</h3><p>Verificare finală și recomandări de utilizare.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="sec sec--dark">
+  <div class="wrap why">
+    <div class="reveal">
+      <p class="kicker">05 / De ce noi</p>
+      <h2>Precizie, nu<br><span class="grad">presupuneri.</span></h2>
+      <div class="badge-img"><img src="img/badge.jpg" alt="ECU DRIVE – Performance &amp; Diagnostics: Stage 1, diagnoză, codări, electrică auto" loading="lazy"></div>
+    </div>
+    <div class="why__list">
+      <div class="why__it reveal"><span class="mono">/01</span><div><h3>Echipament profesional</h3><p>Interfețe și software de diagnoză și programare actualizate pentru majoritatea mărcilor.</p></div></div>
+      <div class="why__it reveal"><span class="mono">/02</span><div><h3>Transparență totală</h3><p>Știi exact ce se face la mașina ta, de ce și ce rezultat să aștepți.</p></div></div>
+      <div class="why__it reveal"><span class="mono">/03</span><div><h3>Siguranța motorului</h3><p>Soft personalizat, în limite sigure, cu verificări înainte și după.</p></div></div>
+      <div class="why__it reveal"><span class="mono">/04</span><div><h3>Revenire oricând</h3><p>Fișierul original este salvat. Poți reveni la setările din fabrică.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG -->
+<section class="sec" id="blog">
+  <div class="wrap">
+    <header class="sec__head reveal" style="display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap">
+      <div>
+        <p class="kicker">Blog &amp; lucrări</p>
+        <h2>Ultimele <span class="grad">articole.</span></h2>
+      </div>
+      <a href="blog.html" class="btn btn--ghost">Toate articolele <i>→</i></a>
+    </header>
+    <div class="posts" id="latestPosts"></div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec" id="faq">
+  <div class="wrap narrow">
+    <header class="sec__head reveal">
+      <p class="kicker">06 / FAQ</p>
+      <h2>Întrebări frecvente</h2>
+    </header>
+    <div class="acc reveal">
+      <details><summary>Pot reveni la softul original?</summary><p>Da. Salvăm întotdeauna fișierul original înainte de orice modificare.</p></details>
+      <details><summary>Cât durează o reprogramare?</summary><p>De regulă între 1 și 3 ore, în funcție de vehicul și de nivelul ales.</p></details>
+      <details><summary>Afectează garanția?</summary><p>Modificările de soft pot influența garanția oferită de producător sau dealer. Te informăm înainte de intervenție.</p></details>
+      <details><summary>Ce mărci lucrați?</summary><p>Majoritatea mărcilor auto moderne. Trimite-ne datele mașinii și îți confirmăm compatibilitatea.</p></details>
+      <details><summary>Ce legislație trebuie să respect?</summary><p>Intervențiile asupra sistemelor de poluare sunt reglementate. Verifică normele aplicabile pentru utilizarea mașinii pe drumurile publice; te sfătuim la programare.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="sec sec--contact" id="contact">
+  <div class="hero__glow hero__glow--b" aria-hidden="true"></div>
+  <div class="wrap contact">
+    <div class="reveal">
+      <p class="kicker">07 / Contact</p>
+      <h2>Hai să-i dăm<br><span class="grad">viață motorului.</span></h2>
+      <p class="sub">Spune-ne despre mașina ta. Revenim cu ofertă în maximum 24 de ore.</p>
+      <ul class="clist">
+        <li><span class="mono">TELEFON</span><a href="tel:+40773492879">0773 492 879</a></li>
+        <li><span class="mono">WHATSAPP</span><a href="https://wa.me/40773492879" target="_blank" rel="noopener">Scrie-ne direct</a></li>
+        <li><span class="mono">EMAIL</span><a href="mailto:roberto.ecudoctor@gmail.com">roberto.ecudoctor@gmail.com</a></li>
+        <li><span class="mono">ADRESĂ</span><span>Brașov</span></li>
+        <li><span class="mono">PROGRAM</span><span>L–V 09:00–18:00 · S 09:00–14:00</span></li>
+      </ul>
+    </div>
+    <form id="form" class="form reveal" novalidate>
+      <div class="row2">
+        <label>Nume<input name="nume" required autocomplete="name"></label>
+        <label>Telefon<input name="tel" type="tel" required autocomplete="tel"></label>
+      </div>
+      <label>Mașina<input name="masina" required placeholder="ex: VW Golf 7 2.0 TDI 2016"></label>
+      <fieldset class="opts">
+        <legend>Serviciu</legend>
+        <label><input type="radio" name="serviciu" value="Diagnoză electrică" checked><span>Diagnoză</span></label>
+        <label><input type="radio" name="serviciu" value="Stage 1"><span>Stage 1</span></label>
+        <label><input type="radio" name="serviciu" value="Stage 2"><span>Stage 2</span></label>
+        <label><input type="radio" name="serviciu" value="Stage 3"><span>Stage 3</span></label>
+        <label><input type="radio" name="serviciu" value="Problemă DPF/EGR/AdBlue"><span>DPF/EGR/AdBlue</span></label>
+        <label><input type="radio" name="serviciu" value="Altceva"><span>Altceva</span></label>
+      </fieldset>
+      <label>Detalii<textarea name="detalii" rows="3" placeholder="Ce simptome are mașina / ce îți dorești?"></textarea></label>
+      <button class="btn btn--lg btn--full" type="submit">Trimite pe WhatsApp <i>→</i></button>
+      <p class="tiny" id="msg" role="status"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot__word" aria-hidden="true"><span class="chrome">ECU</span><b>DRIVE</b></div>
+    <p class="foot__tag" aria-hidden="true">Performance &amp; Diagnostics</p>
+    <div class="foot__in">
+      <span>© <span id="yr"></span> ECU DRIVE. Toate drepturile rezervate.</span>
+      <nav><a href="#servicii">Servicii</a><a href="#soft">Soft</a><a href="#probleme">Poluare</a><a href="blog.html">Blog</a><a href="#contact">Contact</a></nav>
+    </div>
+  </div>
+</footer>
+
+<a class="fab" href="https://wa.me/40773492879" target="_blank" rel="noopener" aria-label="Scrie-ne pe WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2s-1 .3-3.4-.7a11.6 11.6 0 0 1-4.6-4.1c-.4-.5-1-1.6-1-2.9s.7-2 1-2.3a1 1 0 0 1 .7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.5c-.1.1-.3.3-.1.6a8 8 0 0 0 1.5 1.8 7 7 0 0 0 2.1 1.3c.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.2.1.7-.2 1z"/></svg>
+</a>
+
+<script src="script.js"></script>
+<script src="blog.js"></script>
+</body>
+</html>
