@@ -3,7 +3,7 @@
 
 backend:
   name: github
-  repo: robertoracotea3-rgb/ecudrive
+  repo: robertoecudoctor-png/ecudrive
   branch: main
 
 # Pentru teste pe calculator: rulează `npx decap-server` în folderul site-ului
