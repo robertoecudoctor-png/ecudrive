@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://ecudrive.ro/</loc></url>
-  <url><loc>https://ecudrive.ro/blog.html</loc></url>
+  <url><loc>https://ecudrive.ro/</loc><lastmod>2026-10-05</lastmod></url>
+  <url><loc>https://ecudrive.ro/chiptuning-brasov.html</loc><lastmod>2026-10-05</lastmod></url>
+  <url><loc>https://ecudrive.ro/dpf-egr-adblue-brasov.html</loc><lastmod>2026-10-05</lastmod></url>
+  <url><loc>https://ecudrive.ro/diagnoza-auto-brasov.html</loc><lastmod>2026-10-05</lastmod></url>
+  <url><loc>https://ecudrive.ro/codari-auto-brasov.html</loc><lastmod>2026-10-05</lastmod></url>
+  <url><loc>https://ecudrive.ro/blog.html</loc><lastmod>2026-10-05</lastmod></url>
+  <url><loc>https://ecudrive.ro/articol.html?p=martor-dpf-aprins-ce-faci</loc><lastmod>2026-10-05</lastmod></url>
+  <url><loc>https://ecudrive.ro/articol.html?p=stage-1-vs-stage-2-vs-stage-3</loc><lastmod>2026-10-05</lastmod></url>
+  <url><loc>https://ecudrive.ro/articol.html?p=codari-auto-functii-ascunse</loc><lastmod>2026-10-05</lastmod></url>
   <url><loc>https://ecudrive.ro/articol.html?p=volvo-xc60-regenerare-dpf</loc></url>
   <url><loc>https://ecudrive.ro/articol.html?p=ce-este-stage-1</loc></url>
   <url><loc>https://ecudrive.ro/articol.html?p=mesaj-adblue-pornire-imposibila</loc></url>

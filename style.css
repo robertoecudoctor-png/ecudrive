@@ -455,7 +455,7 @@ h3{font:600 1.25rem/1.25 var(--fh);letter-spacing:-.01em;margin-bottom:10px}
 @keyframes fadeUp{from{opacity:0;transform:translateY(24px)}}
 
 /* articol */
-.article{padding:150px 0 40px}
+.article{position:relative;padding:150px 0 40px;overflow-x:clip}
 .article__head{max-width:860px;margin:0 auto 40px}
 .article__head h1{font-size:clamp(2rem,5vw,3.6rem);text-transform:none;line-height:1.08}
 .article__meta{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-top:22px;font:500 .78rem var(--fm);letter-spacing:.1em;text-transform:uppercase;color:var(--mute)}
@@ -487,6 +487,12 @@ h3{font:600 1.25rem/1.25 var(--fh);letter-spacing:-.01em;margin-bottom:10px}
 .cta-box .hero__cta{justify-content:center}
 .related{margin-top:90px}
 .related h2{margin-bottom:30px}
+
+/* pagini de servicii */
+.svc__lead{max-width:62ch}
+.svc__cta{margin-top:30px}
+.svc__faq{margin:80px auto 0}
+.svc__faq h2{margin-bottom:24px}
 
 @media(max-width:1024px){
   .posts{grid-template-columns:repeat(2,1fr)}

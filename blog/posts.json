@@ -1,6 +1,33 @@
 {
   "posts": [
     {
+      "title": "Martor DPF aprins: ce faci (și ce să nu faci)",
+      "slug": "martor-dpf-aprins-ce-faci",
+      "date": "2026-10-05T11:00:00.000Z",
+      "category": "DPF · EGR · AdBlue",
+      "cover": "",
+      "excerpt": "S-a aprins martorul DPF pe bord? Ce înseamnă, ce poți încerca singur și când e momentul pentru o diagnoză.",
+      "body": "Martorul **DPF** (filtrul de particule) se aprinde când calculatorul consideră că filtrul s-a încărcat prea mult cu funingine și nu a reușit să se curețe singur.\n\n## Ce înseamnă de fapt\n\nÎn mod normal, DPF-ul se curăță singur: la drum, motorul ridică temperatura gazelor de evacuare și arde funinginea strânsă în filtru. Procesul se numește **regenerare**. Dacă mergi mult pe distanțe scurte, prin oraș, motorul nu ajunge destul de cald, regenerarea nu apucă să se termine, iar filtrul se încarcă.\n\n## Ce poți încerca\n\nDacă martorul doar s-a aprins și mașina merge normal, multe manuale recomandă un drum de 15–20 de minute la turație constantă, pe drum deschis, ca regenerarea să se poată finaliza. Nu e nevoie de viteză mare, ci de turație constantă, respectând regulile de circulație. Verifică manualul mașinii tale: procedura diferă de la un producător la altul.\n\n## Ce să NU faci\n\n- nu ignora martorul săptămâni la rând: un filtru prea încărcat nu mai poate fi regenerat și poate ajunge să fie înlocuit;\n- nu opri motorul în mijlocul unei regenerări dacă poți evita (semne: ralanti mai ridicat, ventilatorul merge și după oprire);\n- nu turna aditivi la întâmplare fără să știi cauza;\n- nu șterge pur și simplu eroarea: martorul revine.\n\n## Când vii la diagnoză\n\n- martorul nu se stinge nici după un drum lung;\n- mașina a intrat în mod avarie și nu mai trage;\n- se aprind și alte martoare (motor, preîncălzire);\n- regenerările au devenit foarte dese.\n\n## Ce verificăm\n\nGradul de încărcare calculat de calculator, senzorul de presiune diferențială, senzorii de temperatură și tot ce poate face motorul să producă prea multă funingine: injectoare, EGR, turbo. Apoi facem regenerare de service din tester sau curățare, după caz. Un exemplu real: [Volvo XC60 cu „Soot filter full”](articol.html?p=volvo-xc60-regenerare-dpf).\n\n> Mai multe despre ce facem găsești pe pagina [DPF, EGR și AdBlue în Brașov](dpf-egr-adblue-brasov.html)."
+    },
+    {
+      "title": "Stage 1, Stage 2, Stage 3: care sunt diferențele",
+      "slug": "stage-1-vs-stage-2-vs-stage-3",
+      "date": "2026-10-05T10:00:00.000Z",
+      "category": "Soft / Stage",
+      "cover": "img/stage1.jpg",
+      "excerpt": "Trei niveluri de reprogramare, trei feluri de proiect. Ce presupune fiecare, ce piese cere și pentru cine are sens.",
+      "body": "Când vine vorba de chiptuning, auzi des de **Stage 1, Stage 2 și Stage 3**. Nu sunt standarde oficiale, ci o împărțire folosită în toată industria ca să descrie cât de mult se modifică mașina.\n\n## Stage 1 – doar soft\n\n- mașina rămâne 100% originală ca piese;\n- se modifică doar softul din calculatorul motorului;\n- câștig vizibil de putere și cuplu, mai ales la motoarele turbo;\n- este varianta potrivită pentru majoritatea mașinilor de zi cu zi.\n\nMai multe în articolul [Stage 1: ce înseamnă și ce câștigi](articol.html?p=ce-este-stage-1).\n\n## Stage 2 – soft și piese de performanță\n\n- presupune piese care ajută motorul să respire mai bine: admisie, intercooler mai mare, downpipe sau evacuare;\n- softul se adaptează la piesele montate;\n- câștigurile trec de Stage 1;\n- mecanica trebuie să fie în stare foarte bună: ambreiaj, turbo, răcire.\n\nUnele piese de performanță pot afecta omologarea pentru drumurile publice. Îți spunem dinainte ce se aplică la mașina ta.\n\n## Stage 3 – hardware dedicat\n\n- turbo mărit, injectoare, pompă și uneori piese interne de motor;\n- harta se construiește complet personalizat;\n- proiect individual, cu teste și ajustări fine.\n\n## Ce variantă ți se potrivește\n\n- **mașină de zi cu zi**, vrei mai mult cuplu la depășiri → Stage 1;\n- **ai deja piese de performanță** sau plănuiești să le montezi → Stage 2;\n- **proiect de performanță**, cu buget și timp pentru teste → Stage 3.\n\n## Indiferent de nivel\n\nÎncepem cu diagnoză, salvăm softul original și verificăm parametrii după scriere. Detalii pe pagina [Chiptuning în Brașov](chiptuning-brasov.html)."
+    },
+    {
+      "title": "Codări auto: funcții ascunse pe care le poți activa",
+      "slug": "codari-auto-functii-ascunse",
+      "date": "2026-10-05T09:00:00.000Z",
+      "category": "Codări",
+      "cover": "img/diagnoza.jpg",
+      "excerpt": "Multe mașini au funcții deja montate, dar oprite din fabrică. Câteva exemple de codări populare și ce trebuie să știi înainte.",
+      "body": "Mașinile moderne au zeci de module electronice, iar fiecare are setări care pornesc sau opresc anumite funcții. Aceeași mașină se vinde în multe țări și echipări, așa că unele funcții există, dar sunt dezactivate. Prin **codare** le poți activa.\n\n## Exemple populare\n\nCe se poate activa depinde mult de marcă, model, an și echipare. Câteva exemple frecvente:\n\n- **Bord și afișaje:** temperatura uleiului, meniuri suplimentare, cursa completă a acelor la pornire.\n- **Lumini:** coming home / leaving home, comportamentul luminilor de zi, semnalizare de confort cu mai multe clipiri.\n- **Confort:** închiderea și deschiderea geamurilor din telecomandă, rabatarea automată a oglinzilor la încuiere, coborârea oglinzii la marșarier.\n- **Sunete și avertizări:** dezactivarea unor semnale sonore deranjante.\n- **Start-Stop:** pe unele modele se poate memora ultima stare a butonului.\n\n## Adaptări după reparații\n\nNu toate codările sunt pentru confort. Multe piese noi trebuie înregistrate în calculator: bateria (la unele mărci), codurile injectoarelor, senzori sau module înlocuite. Fără adaptare, piesa poate funcționa greșit.\n\n## Ce trebuie să știi\n\n- salvăm întotdeauna **codarea originală**, ca să se poată reveni;\n- prin codare nu apar funcții pentru care lipsesc piesele: o cameră care nu e montată nu apare din soft;\n- unele funcții de siguranță și asistență au reguli de omologare; îți spunem ce se poate.\n\n## Vrei să vezi ce se poate pe mașina ta?\n\nTrimite-ne marca, modelul și anul, plus ce ți-ar plăcea. Detalii pe pagina [Codări auto în Brașov](codari-auto-brasov.html). De cele mai multe ori putem face codările și la tine, în Brașov și împrejurimi."
+    },
+    {
       "title": "Volvo XC60: „Soot filter full” – diagnoză și regenerare DPF",
       "slug": "volvo-xc60-regenerare-dpf",
       "date": "2026-10-04T12:00:00.000Z",
