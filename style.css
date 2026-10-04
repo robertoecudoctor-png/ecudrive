@@ -322,7 +322,7 @@ h3{font:600 1.25rem/1.25 var(--fh);letter-spacing:-.01em;margin-bottom:10px}
 .badge-img{margin-top:40px;max-width:380px;border-radius:50%;box-shadow:0 0 0 1px rgba(30,144,255,.4),0 0 60px rgba(30,144,255,.35);animation:float 10s ease-in-out infinite}
 .badge-img img{display:block;width:100%;border-radius:50%}
 .foot__in{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;color:var(--mute);font-size:.88rem}
-.foot nav{display:flex;gap:22px}
+.foot nav{display:flex;flex-wrap:wrap;gap:10px 22px}
 .foot a{text-decoration:none;transition:color .2s}
 .foot a:hover{color:var(--acc)}
 
