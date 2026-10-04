@@ -8,6 +8,19 @@
   status = 301
   force = true
 
+# Link scurt pentru recenzii (pe cardul cu QR). Când profilul Google e confirmat,
+# schimbă "to" cu linkul de recenzie Google; cardurile tipărite rămân valabile.
+[[redirects]]
+  from = "/recenzie"
+  to = "https://www.facebook.com/ecudrive/reviews"
+  status = 302
+  force = true
+
+[[headers]]
+  for = "/card-recenzie.html"
+  [headers.values]
+    X-Robots-Tag = "noindex"
+
 [[headers]]
   for = "/img/*"
   [headers.values]

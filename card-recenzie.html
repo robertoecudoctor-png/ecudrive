@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Card recenzie | ECU DRIVE</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  /* Pagină de tipărit: 8 cărți de vizită (85 × 55 mm) pe o foaie A4 */
+  @page { size: A4; margin: 10mm; }
+  * { box-sizing: border-box; margin: 0; }
+  body { font-family: Inter, Arial, sans-serif; color: #0b1220; background: #e9edf2; }
+  .help { max-width: 190mm; margin: 24px auto; padding: 16px 20px; background: #fff; border-radius: 12px; border: 1px solid #cfd6e0; line-height: 1.5 }
+  .help b { color: #0a5cff }
+  .sheet { width: 190mm; margin: 0 auto 40px; display: grid; grid-template-columns: repeat(2, 85mm); gap: 6mm 20mm; justify-content: center; background: #fff; padding: 8mm 0 }
+  .card { width: 85mm; height: 55mm; border: .3mm dashed #b9c2cf; border-radius: 3mm; padding: 4.5mm 5mm; display: grid; grid-template-columns: 1fr 26mm; gap: 4mm; align-items: center; overflow: hidden; position: relative }
+  .card::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 1.6mm; background: linear-gradient(#7fd0ff, #1e90ff 55%, #0a5cff) }
+  .logo { font: italic 900 6.2mm/1 "Exo 2", Arial, sans-serif; letter-spacing: -.02em }
+  .logo b { color: #1e90ff }
+  .tag { font-size: 1.9mm; letter-spacing: .5mm; text-transform: uppercase; color: #5b6676; margin-top: 1mm }
+  h2 { font-size: 3.4mm; line-height: 1.25; margin-top: 3.5mm }
+  p { font-size: 2.5mm; line-height: 1.35; color: #3b4555; margin-top: 1.4mm }
+  .foot { font-size: 2.3mm; font-weight: 600; margin-top: 3mm; color: #0b1220 }
+  .qr { width: 26mm; height: 26mm }
+  .qr img, .qr canvas { width: 26mm !important; height: 26mm !important }
+  .scan { font-size: 1.9mm; text-align: center; color: #5b6676; margin-top: 1mm }
+  @media print {
+    body { background: #fff }
+    .help { display: none }
+    .sheet { margin: 0; padding: 0 }
+  }
+</style>
+</head>
+<body>
+<div class="help">
+  <b>Card pentru recenzii.</b> Apasă <b>Ctrl + P</b> (sau Tipărește din meniu), alege hârtie <b>A4</b>, scara <b>100%</b> și bifează „Grafică de fundal”.
+  Tai pe liniile punctate și lasă un card în mașina fiecărui client. Codul QR duce la <b>ecudrive.ro/recenzie</b>.
+</div>
+<div class="sheet" id="sheet"></div>
+
+<template id="tpl">
+  <div class="card">
+    <div>
+      <div class="logo">ECU <b>DRIVE</b></div>
+      <div class="tag">Performance &amp; Diagnostics</div>
+      <h2>Mulțumim că ai ales ECU&nbsp;DRIVE!</h2>
+      <p>Ne lași o recenzie? Durează 30 de secunde și ne ajută enorm.</p>
+      <div class="foot">ecudrive.ro · 0773 492 879</div>
+    </div>
+    <div>
+      <div class="qr"></div>
+      <div class="scan">Scanează cu camera</div>
+    </div>
+  </div>
+</template>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+  const sheet = document.getElementById('sheet');
+  const tpl = document.getElementById('tpl');
+  for (let i = 0; i < 8; i++) {
+    const card = tpl.content.cloneNode(true);
+    new QRCode(card.querySelector('.qr'), {
+      text: 'https://ecudrive.ro/recenzie', width: 400, height: 400,
+      colorDark: '#0b1220', colorLight: '#ffffff', correctLevel: QRCode.CorrectLevel.M,
+    });
+    sheet.appendChild(card);
+  }
+</script>
+</body>
+</html>
