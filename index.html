@@ -33,6 +33,7 @@
       <a href="#servicii">Servicii</a>
       <a href="#soft">Soft Stage</a>
       <a href="#probleme">DPF · EGR · AdBlue</a>
+      <a href="#verificare-vin" class="menu__vin">Verificare VIN</a>
       <a href="blog.html">Blog</a>
       <a href="#faq">FAQ</a>
       <a href="#contact" class="btn btn--sm">Programare <i>→</i></a>
@@ -101,6 +102,39 @@
     </div>
   </div>
   <a href="#servicii" class="scroll-cue" aria-label="Derulează"><span></span></a>
+</section>
+
+<!-- VERIFICARE VIN -->
+<section class="vinband" id="verificare-vin">
+  <div class="wrap vinband__in" data-vin>
+    <div class="vin__main">
+      <p class="kicker">Cumperi o mașină second-hand?</p>
+      <h2>Verifică mașina <span class="grad">după VIN.</span></h2>
+      <p class="sub">Scrie seria de șasiu și afli pe loc marca, modelul și anul. Apoi vezi istoricul online, iar în Brașov venim noi la mașină.</p>
+      <form class="vin__form" novalidate>
+        <label for="vin-home" class="mono">SERIA DE ȘASIU (VIN) · 17 CARACTERE</label>
+        <div class="vin__row"><input id="vin-home" name="vin" autocomplete="off" autocapitalize="characters" spellcheck="false" maxlength="17" placeholder="ex: WVWZZZAUZHW123456"><button class="btn" type="submit">Verifică <i>→</i></button></div>
+        <p class="vin__msg" aria-live="polite">VIN-ul e în talonul mașinii și pe parbriz, jos, lângă ștergător.</p>
+      </form>
+      <div class="vin__res" hidden></div>
+    </div>
+    <div class="vin__side">
+      <article class="vin__card">
+        <span class="vin__tag">Raport online</span>
+        <h3>Istoricul complet al mașinii</h3>
+        <ul><li>Kilometri înregistrați în timp</li><li>Daune și accidente</li><li>Verificare furt</li><li>Poze din anunțuri mai vechi</li></ul>
+        <a class="btn btn--ghost" data-vin-cv href="https://www.carvertical.com/ro" target="_blank" rel="sponsored noopener">Vezi raportul carVertical <i>↗</i></a>
+        <p class="vin__cvnote tiny">Link de partener: putem primi un comision, fără cost în plus pentru tine.</p>
+      </article>
+      <article class="vin__card vin__card--ecu">
+        <span class="vin__tag vin__tag--hot">Brașov · la fața locului</span>
+        <h3>Verificăm mașina înainte s-o cumperi</h3>
+        <ul><li><b>Kilometri din 3 surse</b>: module, ITP, istoric</li><li><b>Grosimea vopselei</b> pe fiecare element</li><li><b>Diagnoză completă</b> și DPF · EGR · AdBlue</li></ul>
+        <a class="btn" data-vin-wa href="https://wa.me/40773492879" target="_blank" rel="noopener">Programează pe WhatsApp <i>→</i></a>
+        <a class="vin__more" href="verificare-masina-vin-brasov.html">Ce verificăm, pe larg →</a>
+      </article>
+    </div>
+  </div>
 </section>
 
 <!-- MARQUEE -->
@@ -470,7 +504,7 @@
     <p class="foot__tag" aria-hidden="true">Performance &amp; Diagnostics</p>
     <div class="foot__in">
       <span>© <span id="yr"></span> ECU DRIVE. Toate drepturile rezervate.</span>
-      <nav><a href="chiptuning-brasov.html">Chiptuning</a><a href="dpf-egr-adblue-brasov.html">DPF · EGR · AdBlue</a><a href="diagnoza-auto-brasov.html">Diagnoză</a><a href="codari-auto-brasov.html">Codări</a><a href="blog.html">Blog</a><a href="#contact">Contact</a><a href="https://www.facebook.com/ecudrive" target="_blank" rel="noopener">Facebook</a><a href="https://www.instagram.com/ecudrive.ro/" target="_blank" rel="noopener">Instagram</a></nav>
+      <nav><a href="chiptuning-brasov.html">Chiptuning</a><a href="dpf-egr-adblue-brasov.html">DPF · EGR · AdBlue</a><a href="diagnoza-auto-brasov.html">Diagnoză</a><a href="codari-auto-brasov.html">Codări</a><a href="verificare-masina-vin-brasov.html">Verificare VIN</a><a href="blog.html">Blog</a><a href="#contact">Contact</a><a href="https://www.facebook.com/ecudrive" target="_blank" rel="noopener">Facebook</a><a href="https://www.instagram.com/ecudrive.ro/" target="_blank" rel="noopener">Instagram</a></nav>
     </div>
   </div>
 </footer>
@@ -481,5 +515,6 @@
 
 <script src="script.js"></script>
 <script src="blog.js"></script>
+<script src="vin.js"></script>
 </body>
 </html>

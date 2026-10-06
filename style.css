@@ -508,3 +508,39 @@ h3{font:600 1.25rem/1.25 var(--fh);letter-spacing:-.01em;margin-bottom:10px}
   .cta-box{padding:28px 20px}
   .article__cover{border-radius:18px}
 }
+
+/* verificare VIN */
+.vinband{position:relative;padding:70px 0;background:radial-gradient(900px 420px at 15% 0,rgba(30,144,255,.16),transparent 70%),var(--bg2);border-block:1px solid var(--line2)}
+.vinband--page{padding:150px 0 70px;background:radial-gradient(900px 520px at 20% 0,rgba(30,144,255,.2),transparent 70%),var(--bg)}
+.vinband__in{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:28px;align-items:start}
+.vinband h2,.vinband h1{font:italic 900 clamp(2rem,4.6vw,3.4rem)/1.02 var(--fh);letter-spacing:-.02em;text-transform:uppercase}
+.vinband .sub{margin-top:14px}
+.vin__form{margin-top:28px;display:grid;gap:10px}
+.vin__row{display:flex;gap:10px;flex-wrap:wrap}
+.vin__row input{flex:1 1 260px;min-width:0;background:rgba(0,0,0,.4);border:1px solid var(--line2);color:var(--text);border-radius:14px;padding:16px 18px;font:600 1.15rem var(--fm);letter-spacing:.12em;text-transform:uppercase;transition:border-color .2s,box-shadow .2s}
+.vin__row input::placeholder{color:#4d5868;letter-spacing:.08em}
+.vin__row input:focus{outline:0;border-color:var(--acc);box-shadow:0 0 0 4px rgba(30,144,255,.18)}
+.vin__msg{font-size:.9rem;color:var(--mute);min-height:1.4em}
+.vin__msg.err{color:#ff8a8a}
+.vin__res{margin-top:18px;padding:22px;border-radius:20px;border:1px solid rgba(30,144,255,.4);background:linear-gradient(160deg,rgba(30,144,255,.12),rgba(255,255,255,.02));animation:fadeUp .5s var(--ease) both}
+.vin__res dl{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 22px;margin:0}
+.vin__res dt{font:600 .7rem var(--fm);letter-spacing:.16em;text-transform:uppercase;color:var(--mute)}
+.vin__res dd{margin:4px 0 0;font:700 1.2rem/1.25 var(--fh)}
+.vin__res dd small{display:block;font:500 .72rem var(--fb);color:var(--mute);margin-top:2px}
+.vin__na{font:500 .9rem var(--fb);color:var(--mute)}
+.vin__hint{margin-top:16px;font-size:.88rem;color:var(--mute)}
+.vin__side{display:grid;gap:16px}
+.vin__card{padding:24px;border-radius:22px;border:1px solid var(--line2);background:linear-gradient(160deg,rgba(255,255,255,.06),rgba(255,255,255,.015));display:grid;gap:12px;justify-items:start}
+.vin__card--ecu{border-color:rgba(30,144,255,.45);box-shadow:0 0 60px -30px rgba(30,144,255,.8)}
+.vin__card h3{font:italic 800 1.35rem/1.15 var(--fh)}
+.vin__card ul{list-style:none;display:grid;gap:6px;padding:0;margin:0;color:#cfd6e0;font-size:.95rem}
+.vin__card li::before{content:"✓";color:var(--acc);font-weight:700;margin-right:8px}
+.vin__card li b{color:var(--text)}
+.vin__card .tiny{margin-top:0}
+.vin__tag{font:700 .68rem var(--fm);letter-spacing:.16em;text-transform:uppercase;color:var(--acc2);padding:6px 12px;border-radius:999px;border:1px solid rgba(120,210,255,.35);background:rgba(30,144,255,.08)}
+.vin__tag--hot{color:#fff;background:linear-gradient(135deg,var(--acc),#0a6cff);border-color:transparent}
+.vin__more{font-size:.9rem;color:var(--acc);text-decoration:none}
+.vin__more:hover{text-decoration:underline}
+.menu a.menu__vin{color:var(--acc2)}
+@media(max-width:900px){.vinband__in{grid-template-columns:1fr}.vinband--page{padding-top:120px}}
+@media(max-width:480px){.vin__res dl{grid-template-columns:1fr}.vin__row .btn{width:100%}}
