@@ -531,6 +531,7 @@ h3{font:600 1.25rem/1.25 var(--fh);letter-spacing:-.01em;margin-bottom:10px}
 .vin__hint{margin-top:16px;font-size:.88rem;color:var(--mute)}
 .vin__side{display:grid;gap:16px}
 .vin__card{padding:24px;border-radius:22px;border:1px solid var(--line2);background:linear-gradient(160deg,rgba(255,255,255,.06),rgba(255,255,255,.015));display:grid;gap:12px;justify-items:start}
+.vin__card[hidden]{display:none}
 .vin__card--ecu{border-color:rgba(30,144,255,.45);box-shadow:0 0 60px -30px rgba(30,144,255,.8)}
 .vin__card h3{font:italic 800 1.35rem/1.15 var(--fh)}
 .vin__card ul{list-style:none;display:grid;gap:6px;padding:0;margin:0;color:#cfd6e0;font-size:.95rem}

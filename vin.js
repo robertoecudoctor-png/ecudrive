@@ -1,7 +1,7 @@
 /* Verificare VIN ECU DRIVE: decodare locală (marcă, țară, model și an unde seria le conține sigur) */
 (() => {
-  // Linkul spre raportul de istoric. După aprobarea în programul de afiliere carVertical, pune aici linkul tău.
-  const CV_LINK = 'https://www.carvertical.com/ro';
+  // Linkul de afiliat carVertical. Cât timp e gol, cardul carVertical rămâne ascuns.
+  const CV_LINK = '';
   const WA = '40773492879';
 
   // WMI (primele 3 caractere) -> [marcă, țara de fabricație]
@@ -77,12 +77,13 @@
     const form = $('form', box), input = $('input', box), msg = $('.vin__msg', box), res = $('.vin__res', box);
     const wa = $('[data-vin-wa]', box), cv = $('[data-vin-cv]', box), cvNote = $('.vin__cvnote', box);
     let current = '';
-    if (cv) cv.href = CV_LINK;
+    const cvCard = $('.vin__card--cv', box);
+    if (cv && CV_LINK) { cv.href = CV_LINK; if (cvCard) cvCard.hidden = false; }
 
     const setWa = vin => {
       if (!wa) return;
       const t = vin
-        ? `Salut ECU DRIVE! Aș vrea o verificare înainte de cumpărare (km din 3 surse, grosime vopsea, diagnoză). VIN: ${vin}. Mașina se află în: `
+        ? `Salut ECU DRIVE! Aș vrea o verificare înainte de cumpărare (km din toate modulele, grosime vopsea, DPF/EGR/AdBlue). VIN: ${vin}. Mașina se află în: `
         : 'Salut ECU DRIVE! Aș vrea o verificare înainte de cumpărare. Mașina se află în: ';
       wa.href = `https://wa.me/${WA}?text=${encodeURIComponent(t)}`;
     };
@@ -107,7 +108,7 @@
         ${row('An model', r.year, r.year ? 'estimat din VIN' : '')}
         ${row('Fabricată în', r.country)}
       </dl>
-      <p class="vin__hint">Motorizarea, echiparea și istoricul nu se pot citi doar din VIN. Pe ele le afli din raportul de istoric și la verificarea la fața locului.</p>`;
+      <p class="vin__hint">Motorizarea, echiparea și istoricul nu se pot citi doar din VIN. Pe ele le aflăm la verificarea la fața locului.</p>`;
       res.hidden = false;
       msg.textContent = r.make ? `VIN ${r.vin}` : `VIN ${r.vin}: marca nu e în baza noastră rapidă. O identificăm la verificare.`;
       setWa(r.vin);
